@@ -41,11 +41,19 @@ const users=[
     },
 ]
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); //using this we can extract the keys of a particular object 
-console.log(Object.values(tinderUser)); //using this we can extract the values of a particular object
-console.log(Object.entries(tinderUser)); //using this we can extract the keys and values in an array of a particular object
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); //using this we can extract the keys of a particular object 
+// console.log(Object.values(tinderUser)); //using this we can extract the values of a particular object
+// console.log(Object.entries(tinderUser)); //using this we can extract the keys and values in an array of a particular object
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //hasOwnProperty checks wheather the property is present in the objet is present or not return the result in the boolean datatype
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //hasOwnProperty checks wheather the property is present in the objet is present or not return the result in the boolean datatype
 
 
+const course={
+    courseName:"js in Hindi",
+    price:"999",
+    courseInstructor:"Vikrant"
+}
+
+const {courseInstructor:instructor}=course; //destructuring 
+console.log(instructor);
